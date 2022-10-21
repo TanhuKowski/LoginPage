@@ -83,7 +83,6 @@
             this.textBox_Captcha.Name = "textBox_Captcha";
             this.textBox_Captcha.Size = new System.Drawing.Size(247, 46);
             this.textBox_Captcha.TabIndex = 11;
-            this.textBox_Captcha.Text = "\r\n\r\n\r\n";
             // 
             // button_Check
             // 
@@ -111,6 +110,7 @@
             this.Controls.Add(this.textBox_Captcha);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Captcha";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Captcha";
             this.Load += new System.EventHandler(this.Form_Captcha_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

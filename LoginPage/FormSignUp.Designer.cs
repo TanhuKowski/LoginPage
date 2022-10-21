@@ -110,7 +110,6 @@
             this.textBox_Password.Name = "textBox_Password";
             this.textBox_Password.Size = new System.Drawing.Size(382, 46);
             this.textBox_Password.TabIndex = 9;
-            this.textBox_Password.Text = "\r\n\r\n\r\n";
             this.textBox_Password.TextChanged += new System.EventHandler(this.textBox_Password_TextChanged);
             // 
             // textBox_Username
@@ -124,7 +123,6 @@
             this.textBox_Username.Name = "textBox_Username";
             this.textBox_Username.Size = new System.Drawing.Size(382, 46);
             this.textBox_Username.TabIndex = 8;
-            this.textBox_Username.Text = "\r\n\r\n\r\n";
             // 
             // pictureBox1
             // 
@@ -157,7 +155,6 @@
             this.textBox_Confirm.Name = "textBox_Confirm";
             this.textBox_Confirm.Size = new System.Drawing.Size(382, 46);
             this.textBox_Confirm.TabIndex = 15;
-            this.textBox_Confirm.Text = "\r\n\r\n\r\n";
             this.textBox_Confirm.TextChanged += new System.EventHandler(this.textBox_Confirm_TextChanged);
             // 
             // button_SignUp
@@ -233,6 +230,7 @@
             this.Controls.Add(this.textBox_Username);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign Up";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Password)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Username)).EndInit();

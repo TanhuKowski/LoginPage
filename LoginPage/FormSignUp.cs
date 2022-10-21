@@ -35,14 +35,14 @@ namespace LoginPage
                 }
                 else if ((textBox_Password.Text == textBox_Confirm.Text) && !Account.AccountExists(textBox_Username.Text))
                 {
-                    Account.RegisterAccount(textBox_Username.Text, textBox_Password.Text);
+                    Account.RegisterAccount(textBox_Username.Text.Trim(), textBox_Password.Text);
                     textBox_Username.Text = "";
                     textBox_Password.Text = "";
                     textBox_Confirm.Text = "";
                     MessageBox.Show("Your account has been succesfully created!", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
-                else if (Account.AccountExists(textBox_Username.Text))
+                else if (Account.AccountExists(textBox_Username.Text.Trim()))
                 {
                     MessageBox.Show("Account with this username is already created! Please, create another username", "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     textBox_Username.Text = "";

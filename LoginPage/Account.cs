@@ -18,6 +18,7 @@ namespace LoginPage
             password = _p;
         }
 
+
         public static bool RegisterAccount(string username, string password)
         {
             foreach (Account acc in accounts)

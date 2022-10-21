@@ -12,13 +12,13 @@ namespace LoginPage
         }
         private void button_SignIn_Click(object sender, EventArgs e)
         {
-                if (Account.Login(textBox_Username_L.Text, textBox_Password_L.Text))
+                if (Account.Login(textBox_Username_L.Text.Trim(), textBox_Password_L.Text.Trim()))
                 {
                     MessageBox.Show($"Welcome, {textBox_Username_L.Text}", "Successfully logged into account", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Form_Captcha frm = new Form_Captcha();
                     this.Hide();
                     frm.Show();
-            }
+                }
 
                 else
                 {

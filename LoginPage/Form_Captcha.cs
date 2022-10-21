@@ -28,11 +28,11 @@
         }
         private void Form_Captcha_Load(object sender, EventArgs e)
         {
-
+            getCaptcha();
         }
         private void button_Check_Click(object sender, EventArgs e)
         {
-            if (textBox_Captcha.Text != label_Captcha.Text)
+            if (textBox_Captcha.Text.ToLower().Trim() != label_Captcha.Text.ToLower().Trim())
             {
                 MessageBox.Show("Captcha is incorrect!", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 getCaptcha();

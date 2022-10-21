@@ -56,7 +56,6 @@
             this.textBox_Username_L.Name = "textBox_Username_L";
             this.textBox_Username_L.Size = new System.Drawing.Size(382, 46);
             this.textBox_Username_L.TabIndex = 0;
-            this.textBox_Username_L.Text = "\r\n\r\n\r\n";
             this.textBox_Username_L.TextChanged += new System.EventHandler(this.textBox_Username_TextChanged);
             // 
             // textBox_Password_L
@@ -70,7 +69,6 @@
             this.textBox_Password_L.Name = "textBox_Password_L";
             this.textBox_Password_L.Size = new System.Drawing.Size(382, 46);
             this.textBox_Password_L.TabIndex = 1;
-            this.textBox_Password_L.Text = "\r\n\r\n\r\n";
             this.textBox_Password_L.TextChanged += new System.EventHandler(this.textBox_Password_L_TextChanged);
             // 
             // pictureBox_Logo
@@ -195,6 +193,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Username)).EndInit();
